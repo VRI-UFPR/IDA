@@ -9,7 +9,7 @@ Our previous method is available at https://github.com/VRI-UFPR/ANDA
 Since this repository use a submodule to clone it we recommend running:
 
 ```
-git clone --recurse-submodules https://github.com/ruizvitor/IDA.git
+git clone --recurse-submodules https://github.com/VRI-UFPR/IDA.git
 ```
 
 ## Requirements
