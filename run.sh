@@ -23,7 +23,7 @@ fi
 conda activate genInpaint
 
 
-export CUDA_VISIBLE_DEVICES=1
+#export CUDA_VISIBLE_DEVICES=1
 cp batch_test2.py generative_inpainting/; cp run_inpaint.sh generative_inpainting/; cd ./generative_inpainting/; bash run_inpaint.sh; cd ..;
 
 CURRENT_PATH_IMAGE="${ORIGINALPATH}/DUTS-TR/DUTS-TR-Image/"
