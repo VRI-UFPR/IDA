@@ -30,7 +30,10 @@ You can use your own dataset but as an example we suggest running the following 
 - Download the DUTS Training Dataset at [http://saliencydetection.net/duts/download/DUTS-TR.zip](http://saliencydetection.net/duts/download/DUTS-TR.zip)
 - (Optional) Download the DUTS Test Dataset at [http://saliencydetection.net/duts/download/DUTS-TE.zip](http://saliencydetection.net/duts/download/DUTS-TE.zip)
 
-- Install conda or miniconda and run the bash script run.sh. The script is intended as an example of all the steps required. It will download the duts-tr dataset extract, prepare the folders, create the path file mapping paths_input_mask_output.txt and paths_input_mask.txt, create the two conda environments genInpaint and ida and install the necessary packages in each. It will check if you have the pretrained model for the DeepFillv2, if you already downloaded it and put it in generative_inpainting/model_logs the script will procceed and generate the Inpainted images for the duts-tr dataset at DUTS-TR/DUTS-TR-Inpainted, the the computeKnn.py will run, which accepts input parametrization, the computation of the features will take a while and the proper background_mapping will be created at generate_samples. Finally the ida.py will run and the created samples will be available at generate_samples/output/
+- Install conda or miniconda 
+- run the bash script ```bash run.sh``` 
+
+-The script is intended as an example of all the steps required. It will download the duts-tr dataset extract, prepare the folders, create the path file mapping paths_input_mask_output.txt and paths_input_mask.txt, create the two conda environments genInpaint and ida and install the necessary packages in each. It will check if you have the pretrained model for the DeepFillv2, if you already downloaded it and put it in generative_inpainting/model_logs the script will procceed and generate the Inpainted images for the duts-tr dataset at DUTS-TR/DUTS-TR-Inpainted, the the computeKnn.py will run, which accepts input parametrization, the computation of the features will take a while and the proper background_mapping will be created at generate_samples. Finally the ida.py will run and the created samples will be available at generate_samples/output/
 
 
 - you can run ```python generate_samples/computeKnn.py --help```  to check the input parameterization.
