@@ -1,5 +1,5 @@
 opencv-python==4.1.2.30
-Pillow==6.1.0
+Pillow
 torch==1.0.1.post2
 scikit-image
 scikit-learn
