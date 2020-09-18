@@ -14,7 +14,7 @@ git clone --recurse-submodules https://github.com/ruizvitor/IDA.git
 
 ## Requirements
 
-We recommend the use of conda alternatively miniconda for python environment management. For the scripts, refer to the requirements.txt in the root folder, for the DeepFillv2 refer to generative_inpainting/requirements.txt.
+We recommend the use of conda alternatively miniconda for python environment management. Run the create_env.sh script for the necessary environments.
 
 [The Res2Net-PoolNet]((https://github.com/Res2Net/Res2Net-PoolNet.git)) is only necessary if you wish to replicate the experiments performed on our paper.
 
