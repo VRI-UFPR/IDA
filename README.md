@@ -1,4 +1,7 @@
 # IDA: Improved Data Augmentation Applied to Salient Object Detection
+
+Official code for the SIBGRAPI 2020 paper "[IDA: Improved Data Augmentation Applied to Salient Object Detection](https://arxiv.org/abs/2009.08845)"
+
 Our previous method is available at https://github.com/VRI-UFPR/ANDA
 
 <p align="center">
@@ -16,7 +19,7 @@ git clone --recurse-submodules https://github.com/VRI-UFPR/IDA.git
 
 We recommend the use of conda alternatively miniconda for python environment management. Run the create_env.sh script for the necessary environments.
 
-[The Res2Net-PoolNet]((https://github.com/Res2Net/Res2Net-PoolNet.git)) is only necessary if you wish to replicate the experiments performed on our paper.
+[The Res2Net-PoolNet](https://github.com/Res2Net/Res2Net-PoolNet.git) is only necessary if you wish to replicate the experiments performed on our paper.
 
 
 ## Pretrained models
@@ -33,11 +36,11 @@ You can use your own dataset but as an example we suggest running the following 
 - Install conda or miniconda 
 - run the bash script ```bash run.sh``` 
 
--The script is intended as an example of all the steps required. It will download the duts-tr dataset extract, prepare the folders, create the path file mapping paths_input_mask_output.txt and paths_input_mask.txt, create the two conda environments genInpaint and ida and install the necessary packages in each. It will check if you have the pretrained model for the DeepFillv2, if you already downloaded it and put it in generative_inpainting/model_logs the script will procceed and generate the Inpainted images for the duts-tr dataset at DUTS-TR/DUTS-TR-Inpainted, the the computeKnn.py will run, which accepts input parametrization, the computation of the features will take a while and the proper background_mapping will be created at generate_samples. Finally the ida.py will run and the created samples will be available at generate_samples/output/
+The script is intended as an example of all the steps required. It will download the duts-tr dataset extract, prepare the folders, create the path file mapping paths_input_mask_output.txt and paths_input_mask.txt, create the two conda environments genInpaint and ida and install the necessary packages in each. It will check if you have the pretrained model for the DeepFillv2, if you already downloaded it and put it in generative_inpainting/model_logs the script will procceed and generate the Inpainted images for the duts-tr dataset at DUTS-TR/DUTS-TR-Inpainted. Then, the computeKnn.py will run, which accepts input parametrization, the computation of the features will take a while and the proper background_mapping will be created at generate_samples. Finally the ida.py will run and the created samples will be available at generate_samples/output/
 
 
-- you can run ```python generate_samples/computeKnn.py --help```  to check the input parameterization.
-- you can run ```python generate_samples/ida.py --help``` to check the input parameterization.
+- (Optional) you can run ```python generate_samples/computeKnn.py --help```  to check the input parameterization.
+- (Optional) you can run ```python generate_samples/ida.py --help``` to check the input parameterization.
 
 ## Special thanks
 We would like to thank the authors of Generative Image Inpainting with Contextual Attention for the code of DeepFillv2 used in our work and the authors of Res2Net: A New Multi-scale Backbone Architecture for the Res2Net-PoolNet implementation.
@@ -46,6 +49,12 @@ We would like to thank the authors of Generative Image Inpainting with Contextua
 If you found this code useful for your research, please cite:
 
 ```
+@article{ruiz2020ida,  
+  title={IDA: Improved Data Augmentation Applied to Salient Object Detection},  
+  author={Daniel V. Ruiz and Bruno A. Krinski and Eduardo Todt},  
+  journal={preprint arXiv:2009.08845},  
+  year={2020}  
+}
 ```
 
 
