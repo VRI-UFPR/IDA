@@ -49,11 +49,15 @@ We would like to thank the authors of Generative Image Inpainting with Contextua
 If you found this code useful for your research, please cite:
 
 ```
-@article{ruiz2020ida,  
-  title={IDA: Improved Data Augmentation Applied to Salient Object Detection},  
-  author={Daniel V. Ruiz and Bruno A. Krinski and Eduardo Todt},  
-  journal={preprint arXiv:2009.08845},  
-  year={2020}  
+@INPROCEEDINGS{ruiz2020ida,
+  author={D. V. {Ruiz} and B. A. {Krinski} and E. {Todt}},
+  booktitle={2020 33rd SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI)}, 
+  title={IDA: Improved Data Augmentation Applied to Salient Object Detection}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={210-217},
+  doi={10.1109/SIBGRAPI51738.2020.00036}
 }
 ```
 
